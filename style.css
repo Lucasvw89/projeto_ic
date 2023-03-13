@@ -1,0 +1,335 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1a1a1a;
+}
+
+.center_nome{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20%;
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+}
+
+.center_todo_resto{
+    text-align: center;
+    padding: 400px;
+}
+
+.frase_inicial{
+    color:  #ff9933;  
+    font-family: 'Roboto Mono', monospace;
+}
+
+.frase_resto{
+    color:  #1a1a1a;  
+    font-family: 'Roboto Mono', monospace;
+    font-size: larger;
+}
+
+.frase_parte_3{
+    color:  #ff9933;  
+    font-family: 'Roboto Mono', monospace;
+    font-size: larger;
+}
+
+
+.ovo{
+    display: flex;
+    height: 50px;
+    width: 30px;
+    border-radius: 30px;
+    border: 1px solid #ff9933;
+    background-color: #1a1a1a;
+    justify-content: center;
+    align-items: center;
+}
+
+.setinha{
+    transform: rotate(90deg);
+    color:  #ff9933;  
+    font-family: 'Roboto Mono', monospace;
+    position: absolute;
+    margin-left: 3px;
+}
+
+.part_1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: #1a1a1a;
+}
+
+.botao_expansor{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+
+}
+
+.img_size{
+
+    width: 20px;
+    height: 20px;
+    position: absolute;
+
+}
+
+.img_size:hover{
+    transform: rotate(180deg);
+    transition: 0.2s;
+    transition-timing-function: ease;
+
+}
+
+.botao{
+    display: flex;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    border: 10px solid #1a1a1a;
+    display: flex;
+    background-color: #1a1a1a;
+    justify-self: center;
+    align-self: center;
+
+    position: absolute;
+}
+
+.botao_expansor:hover > .botao{
+    width: 400px;
+    height: 400px;
+    border: 1px solid #ff9933;
+    opacity: 0%;
+    transition: 1s;
+    justify-self: center;
+    align-self: center;
+}
+
+.aba_secundaria{
+    display: flex;
+    width: 0;
+    height: 0;
+    background-color: #1a1a1a;
+    position: absolute;
+    opacity: 90%;
+    justify-content: left;
+}
+
+.botao_expansor:hover > .aba_secundaria{
+    width: 300px;
+    height: 98.5%;
+    transition: 0.4s;
+    opacity: 90%;
+    transition-delay: 0.5s;
+    transition-timing-function: ease;
+    border: 1px solid #ff9933;
+    margin-left: 277px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 10px;
+    font-size: 0;
+    color:  #ff9933;  
+    font-family: 'Roboto Mono', monospace;
+    opacity: 0;
+}
+
+.botao_expansor:hover .links{
+    opacity: 100%;
+    transition: 0.3s;
+    transition-delay: 0.4s;
+    transition-timing-function: ease;
+    font-size: large;
+}
+
+.profile{
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+}
+
+.botao_expansor:hover .profile{
+    width: 120px;
+    height: 160px;
+}
+
+.link{
+    font-size: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.botao_expansor:hover .link{
+    color: #ff9933;
+    font-family: 'Roboto Mono', monospace;
+    font-size: large;
+}
+
+.arrows{
+    font-size: 0;
+}
+
+.link:hover .arrows{
+    font-size: large;
+    transition: 0.2s;
+}
+
+.part_2{
+    display: flex;
+    background-color: #ff9933;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao_da_setinha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+}
+
+.circulo_da_seta_no_meio{
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    border: 10px solid #ff9933;
+    position: absolute;
+    opacity: 0;
+}
+
+.botao_da_setinha:hover .circulo_da_seta_no_meio{
+    width: 400px;
+    height: 400px;
+    opacity: 100%;
+    border: 0px solid #1a1a1a;
+    transition: 0.4s;
+    transition-timing-function: ease;
+}
+
+.part_3{
+    display: flex;
+    background-color: #1a1a1a;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.part_4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.caixa_laranja{
+    display: flex;
+    background-color: #ff9933;
+    width: 50%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.caixa_preta{
+    display: flex;
+    background-color: #1a1a1a;
+    width: 50%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ovo_2{
+    display: flex;
+    height: 50px;
+    width: 30px;
+    border-radius: 30px;
+    border: 1px solid #ff9933;
+    background-color: #1a1a1a;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.desenhos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+}
+
+.foto{
+    width: 24%;
+}
+
+.foto:hover{
+    width: 40%;
+    transition: 0.4s;
+    transition-timing-function: ease;
+    position: absolute;
+}
+
+.musicas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.caixa_da_frase{
+    width: 50%;
+}
+
+.ovo_voltar{
+    display: flex;
+    height: 30px;
+    width: 90px;
+    border-radius: 30px;
+    border: 1px solid #ff9933;
+    background-color: #1a1a1a;
+    justify-content: center;
+    align-items: center;
+}
+
+.voltar{
+    color:  #ff9933;  
+    font-family: 'Roboto Mono', monospace;
+    position: absolute;
+    font-size: large;
+}
+
+.ovo_3{
+    display: flex;
+    height: 30px;
+    width: 90px;
+    border-radius: 30px;
+    border: 1px solid #ff9933;
+    background-color: #1a1a1a;
+    justify-content: center;
+    align-items: center;
+}
